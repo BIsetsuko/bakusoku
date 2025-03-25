@@ -1,6 +1,10 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"bakusoku/controller"
+
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
 	router := gin.Default()
@@ -9,11 +13,6 @@ func main() {
 			"message": "pong",
 		})
 	})
-	router.GET("/getNarutoList", func(c *gin.Context){
-		c.JSON(200, gin.H{
-			"message": "ok",
-			"data": "500",
-		})
-	})
+	router.GET("/getNarutoList", controller.Getting)
 	router.Run(":4000")
 }
