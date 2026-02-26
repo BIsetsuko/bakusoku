@@ -13,6 +13,7 @@ func main() {
 			"message": "pong",
 		})
 	})
+	abcd
 	router.GET("/getNarutoList", controller.Getting)
 	// router.Run(":4000")
 }
