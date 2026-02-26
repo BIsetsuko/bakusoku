@@ -14,5 +14,5 @@ func main() {
 		})
 	})
 	router.GET("/getNarutoList", controller.Getting)
-	router.Run(":4000")
+	// router.Run(":4000")
 }
