@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	ajioedjaomda
+	ajioedjao
 	router := gin.Default()
 	router.GET("/ping", func(c *gin.Context){
 		c.JSON(200, gin.H{
